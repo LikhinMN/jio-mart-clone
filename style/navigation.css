@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  background-color: #fff;
+}
+.navigation {
+  background-color: #0078ad;
+}
+.nav-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  flex: 1;
+  max-width: 400px;
+  background-color: #0c5273;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 50px;
+  gap: 5px;
+}
+.input-container {
+  width: 90%;
+  flex-shrink: 1;
+  background-color: #0c5273;
+}
+.input-container input {
+  outline: none;
+  font-size: 16px;
+  color: white;
+  border: none;
+  background-color: #0c5273;
+}
+.input-container input::placeholder {
+  color: white;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cart {
+  position: relative;
+}
+.cart-quantity {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #e30513;
+  padding: 0 6px;
+  font-size: 13px;
+  border-radius: 10px;
+  color: white;
+}
+.cart-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.cart {
+  padding: 5px 5px;
+  border-radius: 50px;
+  transition: background-color ease-in 100ms;
+}
+.cart:hover {
+  background-color:#0c5273;
+}
+.user {
+  padding: 5px 5px;
+  border-radius: 50px;
+  background-color: rgb(0, 174, 255);
+  transition: background-color ease-in 100ms;
+}
+.user:hover {
+  background-color:#0c5273;
+}
+
+@media (max-width: 600px) {
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .logo {
+    width: 90px;
+  }
+  .search-bar {
+    flex: 0;
+    padding: 6px 10px;
+    border-radius: 50px;
+    gap: 2px;
+  }
+  .cart-user {
+    gap: 10px;
+  }
+  .cart,
+  .user {
+    padding: 3px 3px;
+  }
+  .input-container input {
+    font-size: 14px;
+  }
+  .cart-quantity {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0 6px;
+    font-size: 12px;
+    margin: -2px;
+  }
+  .nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .input-container input {
+    font-size: 14px;
+  }
+  .search-bar .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .input-container input {
+    font-size: 14px;
+    flex-shrink: 1;
+    max-width: 100px;
+  }
+  .cart-quantity {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0 6px;
+    font-size: 10px;
+  }
+}
