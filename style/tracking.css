@@ -1,0 +1,277 @@
+.heading{
+font-size: 24px;
+text-align: center;
+font-family: "poppins" sans-serif;
+}
+
+.tracking-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 20px 10% 0 10%;
+  gap: 10%;
+  font-family: "Poppins", serif;
+}
+.order-status{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.track-order{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.order-status-title,.track-order-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.order-status-status{
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.order-status-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+.order-status-buttons button{
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.order-status-need-help{
+  background-color: white;
+  border: 1px solid rgb(224, 224, 224);
+  color:  #0078ad;
+}
+.order-status-reorder{
+  background-color: #0078ad;
+  border: 1px solid #0078ad;
+  color: white;
+}
+.order-status-summary-dasshboard{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 20px;
+  border-radius: 20px;
+}
+.order-status-summary-dasshboard-title,.track-order-product-title{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.order-status-summary-dasshboard-order-number-container{
+  display: flex;
+  justify-content: space-between;
+}
+.order-status-summary-dasshboard-order-total-container{
+  display: flex;
+  justify-content: space-between;
+}
+.order-status-summary-dasshboard-order-delivery-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+hr{
+  color: black;
+  background-color: black;
+}
+.order-status-summary-dasshboard-order-delivery-value{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.order-status-summary-dasshboard-order-delivery-value .free{
+ color: rgb(0, 178, 89);
+ font-weight: 500;
+}
+.order-status-summary-dasshboard-order-delivery-value .price{
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: line-through 1px gray;
+  color: rgb(175, 175, 175);
+}
+.track-order-product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.track-order-product{
+  border: solid 1px rgb(224, 224, 224);
+  padding: 20px;
+  border-radius: 20px;
+}
+.track-order-product-details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.track-order-product-details-image img{
+  width: 6em;
+  height: 6em;
+  object-fit: contain;
+}
+.track-order-product-details-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.track-order-product-details-discription-price-quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track-order-product-details-discription{
+  flex: 1;
+}
+.track-order-product-details-discription-title{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.track-order-product-details-discription-price{
+  font-size: 18px;
+  font-weight: 600;
+}
+.track-order-product-details-discription-quantity{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(163, 163, 163);
+}
+.track-order-product-details-discription-status{
+  font-weight: 500;
+  margin-top: 4px;
+}
+.track-order-timeline-image-container{
+  background-color: #0078ad;
+}
+
+.track-order-timeline-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.track-order-timeline{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+
+.track-order-time-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+}
+.track-order-timeline-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50px;
+}
+.timer{
+  filter: invert();
+}
+.track-order-timeline-container {
+  display: flex;
+  justify-content: center; /* Center timeline */
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.track-order-timeline {
+  display: flex;
+  justify-content: space-between; /* Even spacing */
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Each Step */
+.track-order-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+/* Step Circle */
+.track-order-timeline-image-container {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active & Completed Styling */
+.track-order-time-container.active .track-order-timeline-image-container {
+  background-color: #0078ad;
+}
+
+.track-order-time-container.completed .track-order-timeline-image-container {
+  background-color: rgb(0, 178, 89);
+}
+
+/* Step Icons */
+.track-order-time-container img {
+ width: 26px;
+ height: 26px;
+}
+
+/* Step Label */
+.track-order-timeline-detail {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Horizontal Line Between Steps */
+.track-order-time-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Active & Completed Progress */
+.track-order-time-container.active::after {
+  background-color: #0078ad;
+}
+
+.track-order-time-container.completed::after {
+  background-color: rgb(0, 178, 89);
+}
+
+/* Remove Line After Last Step */
+.track-order-time-container:last-child::after {
+  display: none;
+}

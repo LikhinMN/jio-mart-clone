@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/navigation.css" />
+    <link rel="stylesheet" href="./style/tracking.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="nav-links-container">
+        <div class="nav-links">
+          <img src="./icons/logo.svg.svg" class="logo" />
+        </div>
+        <div class="nav-links search-bar">
+          <div class="search-container">
+            <img src="./icons/search.svg.svg" class="icon" />
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="Search JioMart" />
+          </div>
+          <div class="menu-container">
+            <img src="./icons/list.svg.svg" class="icon" />
+          </div>
+        </div>
+        <div class="nav-links cart-user">
+          <div class="cart">
+            <div class="cart-quantity">3</div>
+            <a href="cart.html"
+              ><img src="./icons/cart.svg.svg" class="icon"
+            /></a>
+          </div>
+          <a href="user.html">
+            <img src="./icons/user.svg.svg" class="icon user" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <h1 class="heading">Order Details</h1>
+    <div class="tracking-container">
+      <div class="order-status">
+        <div class="order-status-title">Order Status</div>
+        <div class="order-status-status">Cancelled</div>
+        <div class="order-status-buttons">
+          <button class="order-status-need-help">Need Help</button>
+          <button class="order-status-reorder">Reorder</button>
+        </div>
+        <div class="order-status-summary-dasshboard">
+          <div class="order-status-summary-dasshboard-title">Order Details</div>
+          <div class="order-status-summary-dasshboard-details">
+            <div class="order-status-summary-dasshboard-order-number-container">
+              <div class="order-status-summary-dasshboard-order-number">
+                Order ID
+              </div>
+              <div class="order-status-summary-dasshboard-order-number-value">
+                21354351321464321324J
+              </div>
+            </div>
+            <hr />
+            <div class="order-status-summary-dasshboard-order-total-container">
+              <div class="order-status-summary-dasshboard-order-total">
+                Product Total
+              </div>
+              <div class="order-status-summary-dasshboard-order-total-value">
+                &#8377; 99.00
+              </div>
+            </div>
+            <hr />
+            <div
+              class="order-status-summary-dasshboard-order-delivery-container"
+            >
+              <div class="order-status-summary-dasshboard-order-delivery">
+                Delivery Fee
+              </div>
+              <div class="order-status-summary-dasshboard-order-delivery-value">
+                <span class="free">FREE</span
+                ><span class="price">&#8377; 40.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="track-order">
+        <div class="track-order-title">Order Status</div>
+        <div class="track-order-container">
+          <div class="track-order-timeline-container">
+            <div class="track-order-timeline">
+              <!-- Ordered (Completed) -->
+              <div class="track-order-time-container completed">
+                <div class="track-order-timeline-image-container">
+                  <img src="./icons/tick.svg" class="icon" />
+                </div>
+                <div class="track-order-timeline-detail">Ordered</div>
+              </div>
+
+              <!-- Under Process (Completed) -->
+              <div class="track-order-time-container completed">
+                <div class="track-order-timeline-image-container">
+                  <img src="./icons/tick.svg" class="icon" />
+                </div>
+                <div class="track-order-timeline-detail">Under Process</div>
+              </div>
+
+              <!-- Shipped (Active) -->
+              <div class="track-order-time-container active">
+                <div class="track-order-timeline-image-container">
+                  <img src="./icons/timer.svg" class="icon timer" />
+                </div>
+                <div class="track-order-timeline-detail">Shipped</div>
+              </div>
+
+              <!-- Out for Delivery (Inactive) -->
+              <div class="track-order-time-container">
+                <div class="track-order-timeline-image-container">
+                  <img src="./icons/timer.svg" class="icon timer" />
+                </div>
+                <div class="track-order-timeline-detail">Out for Delivery</div>
+              </div>
+
+              <!-- Delivered (Inactive) -->
+              <div class="track-order-time-container">
+                <div class="track-order-timeline-image-container">
+                  <img src="./icons/timer.svg" class="icon timer" />
+                </div>
+                <div class="track-order-timeline-detail">Delivered</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="track-order-product">
+            <div class="track-order-product-title">Order Items (1)</div>
+            <div class="track-order-product-details">
+              <div class="track-order-product-details-image">
+                <img src="./image/product3.jpg" />
+              </div>
+              <div class="track-order-product-details-discription">
+                <div class="track-order-product-details-discription-title">
+                  Fybros 3 Pins Multi Plug Travel socket Adaptor
+                </div>
+                <div
+                  class="track-order-product-details-discription-price-quantity"
+                >
+                  <div class="track-order-product-details-discription-price">
+                    &#8377; 99.00
+                  </div>
+                  <div class="track-order-product-details-discription-quantity">
+                    Qty: 1
+                  </div>
+                </div>
+                <div class="track-order-product-details-discription-status">
+                  Cancelled
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
