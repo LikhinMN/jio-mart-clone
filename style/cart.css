@@ -1,0 +1,210 @@
+.heading {
+  text-align: center;
+  font-size: 24px;
+}
+.Cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 100px;
+  gap: 10px;
+  font-weight: 500;
+}
+.product-details-grid {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  gap: 10px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.product-schedule {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.product-details-summary {
+  display: flex;
+}
+.product-details-summary-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.product-details-summary-image-conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-details-summary-image-conatiner img {
+  width: 6em;
+  height: 6em;
+  object-fit: contain;
+}
+.product-add-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.product-add-button button {
+  border-radius: 50px;
+  font-size: 20px;
+  color: #0078ad;
+  border: solid 2px rgb(224, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.product-details-summary-product-price-conatiner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-details-summary-product-price-discount {
+  font-size: 16px;
+  font-weight: 600;
+}
+.product-details-summary-product-price-original {
+  font-size: 12px;
+  text-decoration: line-through 1px solid grey;
+  color: grey;
+}
+.product-details-summary-product-name {
+  font-size: 14;
+}
+.product-details-summary-discount-price p{
+  background-color: rgb(229, 247, 238);
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: rgb(3, 117, 60);
+  font-size: 12px;
+}
+.product-total-summary {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-shrink: 0;
+  gap: 20px;
+}
+.product-details-summary-delivary {
+  font-size: 14px;
+  color: rgb(0, 178, 89);
+}
+.product-total-summary-dashboard {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid rgb(224, 224, 224);
+}
+.product-total-summary-dashboard-haeding {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product-total-summary-dashboard-mrp-total-conatiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.break {
+  background-color: grey;
+  width: 100%;
+}
+.product-total-summary-dashboard-mrp-total-price .free {
+  color: rgb(0, 178, 89);
+}
+.product-total-summary-dashboard-mrp-total-price .total {
+  font-size: 16px;
+  font-weight: 600;
+}
+.product-total-summary-dashboard-mrp-total {
+  font-size: 14px;
+}
+.product-total-summary-dashboard-mrp-total-price {
+  font-size: 14px;
+}
+.product-total-summary-dashboard-mrp-total-price .discount {
+  color: rgb(0, 178, 89);
+}
+.product-total-summary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-total-summary-button button {
+  background-color: #0078ad;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+  width: 100%;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+.order-icon{
+  width: 18px;
+  height: 18px;
+}
+@media(max-width:1200px){
+  .Cart {
+    margin: 20px 10px;
+    gap: 10px;
+  }
+}
+@media(max-width:767px){
+  .Cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10%;
+  }
+  .product-schedule{
+    margin-bottom: 20px;
+  }
+  .product-total-summary-dashboard-haeding{
+    margin-bottom: 10px;
+  }
+  .product-details-summary-image-conatiner img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+  }
+}
+@media(max-width:500px){
+  .product-schedule,.product-total-summary-dashboard-haeding {
+    font-size: 15px;
+  }
+  .product-details-summary-product-name p{
+    font-size: 13px;
+  }
+  .product-details-summary-delivary{
+    font-size: 12px;
+  }
+  .product-add-button button{
+    padding: 8px 8px;
+  }
+  .product-total-summary-dashboard-mrp-total-conatiner{
+    font-size: 13px;
+  }
+}
